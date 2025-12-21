@@ -38,7 +38,7 @@ run
 
 ```
 
-view logs
+view logs (new terminal)
 ```bash
 docker exec honeypot tail -f /var/log/honeypot_backdoor.log
 ```
