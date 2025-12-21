@@ -30,8 +30,16 @@ docker run -it --rm -p 21:21 -p 6200:6200 --name honeypot ftp-honeypot
 ## Terminal 2: Test with Metasploit
 
 ```bash
+nmap -sV 127.0.0.1
 msfconsole -q
 use exploit/unix/ftp/vsftpd_234_backdoor
 set RHOSTS 127.0.0.1
 run
+
 ```
+
+#view logs
+```bash
+docker exec honeypot tail -f /var/log/honeypot_backdoor.log
+```
+
