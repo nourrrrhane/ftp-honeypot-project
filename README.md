@@ -3,9 +3,9 @@
 ## Step 1: Create and Clone the Project
 
 ```bash
-mkdir ftp-honeypot-project
-cd ftp-honeypot-project
 git clone https://github.com/nourrrrhane/ftp-honeypot-project.git
+
+cd ftp-honeypot-project
 ls
 ```
 
